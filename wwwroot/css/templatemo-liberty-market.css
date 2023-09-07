@@ -703,7 +703,13 @@ Header Style
     border-radius: 15px;
     width: 10%;
     font-weight: bolder;
-    font-size:80%;
+    font-size:15px;
+}
+
+@media (max-width: 900px) {
+    .Rep-Bug:after {
+        font-size: 10px;
+    }  
 }
 
 .Content-Rule {
@@ -781,6 +787,7 @@ Header Style
     position:absolute;
     background-color: #c39a47;
     top:0px;
+    right:-2px;
     height: 100%;
     width: 15px;
     padding: 3px;

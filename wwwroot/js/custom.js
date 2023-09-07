@@ -8,18 +8,6 @@
         $('#js-preloader').addClass('loaded');
 
     });
-
-
-	$(window).scroll(function() {
-	  var scroll = $(window).scrollTop();
-	  var header = $('header').height();
-
-	  if (scroll >= box - header) {
-	    $("header").addClass("background-header");
-	  } else {
-	    $("header").removeClass("background-header");
-	  }
-	});
 	
 	$('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
