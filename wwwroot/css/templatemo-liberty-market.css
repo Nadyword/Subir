@@ -689,15 +689,22 @@ Header Style
     height:5%;
     z-index:999;
 }
+@media(max-width:550px) {
+    .Rep-Bug {
+        width: 10%;
+        height: 10%;
+        bottom: 40px;
+    }
+}
 
 .text-justi {
     text-align: justify;
 }
 
 .Rep-Bug:after {
-    content: "Reporte de errores";
+    content: "Reportar error";
     position: fixed;
-    bottom: 10px;
+    bottom: 25px;
     right: 5px;
     background-color: #ffffff90;
     border-radius: 15px;
@@ -709,6 +716,8 @@ Header Style
 @media (max-width: 900px) {
     .Rep-Bug:after {
         font-size: 10px;
+        width: 18%;
+        right: 15px;
     }  
 }
 
@@ -753,7 +762,7 @@ Header Style
     max-width: 400px;
     position: fixed;
     top: 0px;
-    left: -275px;
+    left: 275px;
     transition-property: all;
     transition-duration: 1s;
 }
@@ -1771,6 +1780,12 @@ Currently Market Style
 .currently-market-item {
     width: 45%;
     margin: 0 auto;
+}
+
+@media (max-width:470px) {
+    .currently-market-item .item .left-image {
+        display:none;
+    }
 }
 
 .currently-market .section-heading {
